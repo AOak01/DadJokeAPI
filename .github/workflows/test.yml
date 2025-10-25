@@ -1,6 +1,6 @@
 name: DadJokeProject Test
 
-on: Push
+on: push
 
 jobs:
   test:
@@ -19,4 +19,4 @@ jobs:
       - name: Run tests
         run: |
           source venv/bin/activate
-          pytest
+          pytest -vv
